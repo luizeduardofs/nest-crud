@@ -1,0 +1,35 @@
+@baseUrl = http://localhost:3000
+
+### Retorna todos os recados
+GET {{baseUrl}}/recados?limit=10&offset=10 HTTP/1.1
+content-type: application/json
+
+### Retorna um recado por id
+GET {{baseUrl}}/recados/2 HTTP/1.1
+content-type: application/json
+
+### Cria um recado
+POST {{baseUrl}}/recados HTTP/1.1
+content-type: application/json
+
+ {
+    "text": "Novo recado",
+    "from": "Luiz",
+    "to": "Anna"
+  }
+
+### Atualiza um recado por id
+PATCH {{baseUrl}}/recados/2 HTTP/1.1
+content-type: application/json
+
+ {
+    "text": "Novo recado atualizado",
+    "from": "Luiz",
+    "to": "Anna",
+    "isRead": false,
+    "date": "2025-07-24T21:11:25.059Z"
+  }
+
+### Deleta um recado por id
+DELETE {{baseUrl}}/recados/2 HTTP/1.1
+content-type: application/json
