@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { CreateRecadoDto } from './DTOs/create-recado.dto';
-import { UpdateRecadoDto } from './DTOs/update-recado.dto';
+import { CreateRecadoDto } from './dto/create-recado.dto';
+import { UpdateRecadoDto } from './dto/update-recado.dto';
 import { RecadoEntity } from './entities/recado.entity';
 
 @Injectable()

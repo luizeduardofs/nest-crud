@@ -11,8 +11,8 @@ import {
   Post,
   Query,
 } from '@nestjs/common';
-import { CreateRecadoDto } from './DTOs/create-recado.dto';
-import { UpdateRecadoDto } from './DTOs/update-recado.dto';
+import { CreateRecadoDto } from './dto/create-recado.dto';
+import { UpdateRecadoDto } from './dto/update-recado.dto';
 import { RecadosService } from './recados.service';
 
 interface QueryParams {

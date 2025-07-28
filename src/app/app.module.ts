@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { PessoasModule } from 'src/pessoas/pessoas.module';
 import { RecadosModule } from '../recados/recados.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -17,6 +18,7 @@ import { AppService } from './app.service';
       synchronize: true,
     }),
     RecadosModule,
+    PessoasModule,
   ],
   controllers: [AppController],
   providers: [AppService],
